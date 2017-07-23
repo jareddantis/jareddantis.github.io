@@ -75,6 +75,15 @@
                 <p class="small">This page is hosted on <a href="https://pages.github.com">GitHub.</a> The starry background pattern used on this page is from <a href="https://www.toptal.com/designers/subtlepatterns">Subtle Patterns.</a> All other photos are &copy; Jared Dantis.</p>
             </div>
         </div>
-        <script src="js/script.min.js" defer></script>
+        <script>
+            (function(){
+                var now = new Date(), nowYear = now.getFullYear(), nowMo = now.getMonth(),
+                    nowAge = parseInt(nowYear.toString().substr(2,3));
+                if (nowMo < 9)
+                    nowAge--;
+                var age = document.querySelector('#age');
+                age.innerText = nowAge.toString()
+            })();
+        </script>
     </body>
 </html>
