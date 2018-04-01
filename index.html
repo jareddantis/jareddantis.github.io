@@ -10,6 +10,7 @@
         <link rel="stylesheet" type="text/css" href="css/media.css">
 
         <!-- Metadata -->
+        <meta name="Description" content="I am a senior high school student dabbling in photography, graphic design, Web design, and Android development.">
         <meta name="p:domain_verify" content="86138ef25e9a4bf0a50b0fedb54b9c1e"/>
         <meta name="charset" content="utf-8">
         <meta name="charset" content="utf-8">
@@ -120,7 +121,7 @@
             <div id="drawing">
                 <p>Did I mention that I like dogs?</p>
                 <p class="small">drawn by <a href="https://twitter.com/oopscoffee" target="_blank">@oopscoffee</a></p>
-                <img src="img/dog.svg" alt="drawn by @oopscoffee">
+                <img data-src="img/dog.svg" alt="drawn by @oopscoffee">
             </div>
         </div>
 
@@ -139,8 +140,18 @@
 
                 // Open all links in a new tab
                 var links = document.querySelectorAll('a');
-                for (var i = 0; i < links.length; i++)
+                for (var i = 0; i < links.length; i++) {
                     links[i].setAttribute("target", "_blank");
+                    links[i].setAttribute("rel", "noopener");
+                }
+
+                // Lazy load images
+                [].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+                    img.setAttribute('src', img.getAttribute('data-src'));
+                    img.onload = function() {
+                        img.removeAttribute('data-src');
+                    };
+                });
             })();
         </script>
     </body>
