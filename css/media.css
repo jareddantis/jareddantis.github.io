@@ -1,1 +1,142 @@
-@media screen and (max-width:1200px){body #left{width:20rem}body #left #me{height:250px}body #left #intro{height:calc(100vh - 250px)}body #left #intro .intro-content img{margin-bottom:2rem}body #left #intro .intro-content ul{float:left;margin-top:1rem}body #left #intro .intro-content ul li{margin:0 .5rem .5rem 0}body #left #intro .intro-content ul li i{font-size:1.25rem}body #right{width:calc(100% - 20rem)}body #right h2{font-size:1.7rem}body #right p{font-size:1rem}body #right .skills ul li{font-size:1.15rem}body #right table{margin:2rem}body #right table i{margin-right:2rem}}@media screen and (max-width:768px){body #left,body #right{position:relative;width:100%}body #left #me{height:25rem}body #left #intro{height:27rem}body #left #intro .intro-content ul{float:right;margin-top:2rem}body #left #intro .intro-content ul li{margin:0 0 0 .5rem}body #right table td{width:100%;display:block;clear:both}body #right table td.icon{display:flex;align-items:center;margin-bottom:1.5rem}body #right table td.icon i{margin:0}body #right table td.icon .desc{display:inline-block;text-transform:uppercase;color:#1C7C54;font-weight:700;margin-left:1rem}}@media screen and (max-width:600px){body #left #me{height:20rem}body #left #intro{height:23.125rem}body #left #intro .intro-content{width:calc(100% - 4rem);padding:2rem}body #left #intro .intro-content img{margin-bottom:1rem}body #left #intro .intro-content ul{margin-top:2rem;margin-bottom:0}body #left #intro .intro-content ul li{margin-left:.25rem}body #right .skills li{font-size:1.15rem!important}body #right h2{font-size:1.4rem}body #right p{line-height:1.7rem}body #right table{margin:2rem}}@media screen and (max-height:800px) and (min-width:769px){body #left{height:100%}body #left #me{height:32vh}body #left #intro{overflow-y:scroll;height:68vh}body #left #intro .intro-content{padding:0;margin:3rem}body #left #intro .intro-content img{margin-bottom:2rem}}@media screen and (max-height:600px) and (min-width:769px){body #left #intro .intro-content h1{display:none}body #left #intro .intro-content img{margin:0 0 2rem}}
+@media screen and (max-width:1200px) {
+  body {
+    grid-template-columns: [intro] 20rem [detail] 1fr;
+  }
+  #left #me {
+    height: 250px
+  }
+  #intro {
+    height: calc(100vh - 250px)
+  }
+  #intro .intro-content img {
+    margin-bottom: 2rem
+  }
+  #intro .intro-content ul {
+    margin-top: 3rem
+  }
+  #intro .intro-content ul li {
+    margin: 0 .5rem .5rem 0
+  }
+  #intro .intro-content ul li i {
+    font-size: 1.25rem
+  }
+  #right h2 {
+    font-size: 1.7rem
+  }
+  #right p {
+    font-size: 1rem
+  }
+  #right .skills ul li {
+    font-size: 1.15rem;
+    line-height: 1.4rem;
+  }
+  #right table {
+    margin: 2rem
+  }
+  #right table i {
+    margin-right: 2rem
+  }
+}
+
+@media screen and (max-width:768px) {
+  body {
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: [intro] 1fr [detail] 1fr;
+  }
+  #left {
+    grid-row: intro;
+  }
+  #right {
+    grid-row: detail;
+    overflow-y: unset;
+  }
+  #left #me {
+    height: 24rem
+  }
+  #intro {
+    height: 23rem
+  }
+  #intro .intro-content {
+    text-align: center;
+  }
+  #intro .intro-content ul {
+    margin-top: 2rem
+  }
+  #intro .intro-content ul li {
+    margin: 0 0 0 .5rem
+  }
+  #right table td {
+    width: 100%;
+    display: block;
+    clear: both
+  }
+  #right table td.icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem
+  }
+  #right table td.icon i {
+    margin: 0
+  }
+  #right table td.icon .desc {
+    display: inline-block;
+    text-transform: uppercase;
+    color: #1C7C54;
+    font-weight: 700;
+    margin-left: 1rem
+  }
+}
+
+@media screen and (max-width:600px) {
+  #intro .intro-content img {
+    margin-bottom: 1rem
+  }
+  #intro .intro-content ul {
+    margin-bottom: 0
+  }
+  #intro .intro-content ul li {
+    margin-left: .25rem
+  }
+  #right .skills li {
+    font-size: 1.15rem!important
+  }
+  #right h2 {
+    font-size: 1.4rem
+  }
+  #right p {
+    line-height: 1.7rem
+  }
+  #right table {
+    margin: 2rem
+  }
+}
+
+@media screen and (max-height:800px) and (min-width:769px) {
+  #left {
+    height: 100%
+  }
+  #left #me {
+    height: 40vh
+  }
+  #intro {
+    overflow-y: scroll;
+    height: 60vh
+  }
+  #intro .intro-content {
+    padding: 0;
+    margin: 3rem
+  }
+  #intro .intro-content img {
+    margin-bottom: 2rem
+  }
+}
+
+@media screen and (max-height:600px) and (min-width:769px) {
+  #intro .intro-content h1 {
+    display: none
+  }
+  #intro .intro-content img {
+    margin: 0 0 2rem
+  }
+}
