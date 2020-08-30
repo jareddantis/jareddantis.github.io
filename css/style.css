@@ -1,5 +1,5 @@
-@import "_root.css";
-@import "_type.css";
-@import "_top-bottom.css";
-@import "_content.css";
-@import "_breakpoints.css";
+@import "./root.css";
+@import "./type.css";
+@import "./top-bottom.css";
+@import "./content.css";
+@import "./breakpoints.css";
