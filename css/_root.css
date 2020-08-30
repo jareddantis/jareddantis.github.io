@@ -1,0 +1,18 @@
+:root {
+  --bg-color: #EDE6E3;
+  --text-color: #36382E;
+  --accent-color: #5BC3EB;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #22221C;
+    --text-color: #EDE6E3;
+    --accent-color: #F06449;
+  }
+}
+
+html {
+  background: var(--bg-color);
+  color: var(--text-color);
+}

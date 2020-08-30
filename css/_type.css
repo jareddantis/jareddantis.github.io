@@ -1,0 +1,27 @@
+h1, h2, h3, h4, h5, h6, a, p, li, td, span, input, i {
+  font-family: -apple-system, BlinkMacSystemFont,
+                'Helvetica Neue', 'Helvetica',
+                'Segoe UI', 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility !important;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Eczar', serif !important;
+}
+
+a, input, li, p, span, td {
+  font-family: 'Work Sans' !important
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color) !important;
+}
+
+strong {
+  font-weight: 600;
+}

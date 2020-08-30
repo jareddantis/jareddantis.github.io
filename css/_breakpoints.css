@@ -1,0 +1,71 @@
+@media screen and (max-width:1200px),
+screen and (max-height:800px) and (min-width:769px) {
+  #middle .text h1 {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
+
+  #middle .text p {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width:768px) {
+  br {
+    display: none;
+  }
+
+  #middle .text p a {
+    display: inline;
+    text-decoration: underline;
+  }
+
+  #middle .text p a::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width:768px),
+screen and (max-height:800px) and (min-width:769px) {
+  #top, #bottom {
+    position: relative;
+  }
+
+  #middle .text {
+    height: unset;
+  }
+  
+  #middle .text h1 {
+    padding: 1rem 0 2.5rem;
+  }
+
+  #middle .text p.work {
+    margin-bottom: 1.5rem;
+  }
+
+  #middle .drawing {
+    margin: 5rem 0 2rem;
+  }
+
+  #middle .drawing img {
+    max-width: 140px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  #middle .text h1,
+  #middle .text p {
+    text-align: left;
+  }
+
+  #middle .drawing {
+    margin: 10rem 0 2rem;
+  }
+}
+
+@media screen and (max-height:800px) and (min-width:769px) {
+  #middle .text p.work {
+    margin-bottom: 1rem;
+  }
+}

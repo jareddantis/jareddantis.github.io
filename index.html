@@ -6,18 +6,18 @@
     <!-- Resource prioritization for performance -->
     <link rel="preconnect" href="https://storage.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Chivo:400,700|Work+Sans&display=swap" as="style">
     <link rel="preload" href="css/style.css" as="style">
 
     <!-- Page styles -->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Chivo:400,700|Work+Sans&display=swap" as="style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css" integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg==" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Eczar:400,600|Work+Sans:400,600&display=swap" as="style">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/media.css">
 
     <!-- Metadata -->
-    <meta name="description" content="I am a computer science undergraduate dabbling in Web development, graphic design, and photography.">
+    <meta name="description" content="Manila-based CS undergraduate and web designer.">
     <meta name="p:domain_verify" content="86138ef25e9a4bf0a50b0fedb54b9c1e">
     <meta name="charset" content="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,7 +26,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@jareddantis">
     <meta name="twitter:title" content="Jared Dantis">
-    <meta name="twitter:description" content="I am a computer science undergraduate dabbling in Web development, graphic design, and photography.">
+    <meta name="twitter:description" content="Manila-based CS undergraduate and web designer.">
     <meta name="twitter:image" content="https://gravatar.com/avatar/548cd4ab219a75a53f819da4e5cbf5fe?s=2048">
 
     <!-- Favicon -->
@@ -42,87 +42,35 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <!-- Left side -->
-    <div id="left">
-      <div id="me"></div>
-      <div id="intro">
-        <div class="intro-content">
-          <img src="img/name.svg" alt="Jared Dantis">
+    <!-- Top -->
+    <div id="top">
+      <img src="img/name.svg" alt="Jared Dantis">
+    </div>
 
-          <a class="button" href="https://drive.google.com/file/d/1p_VLguhEoUpXJlbL2goalPAAMZzw23gn/view?usp=sharing" alt="See the stuff I've worked on"><i class="las la-graduation-cap"></i>View my CV</a>
-          <a class="button" href="mai&#108;to&#58;hello&#37;4&#48;ja&#114;&#101;&#37;64&#46;%67%7&#49;" alt="Send e-mail"><i class="las la-envelope"></i>Get in touch</a>
-
-          <ul>
-            <li><a href="https://facebook.com/jareddantis" title="Facebook"><i class="lab la-facebook"></i></a></li>
-            <li><a href="https://twitter.com/jareddantis" title="Twitter"><i class="lab la-twitter"></i></a></li>
-            <li><a href="https://instagram.com/jareddantis" title="Instagram"><i class="lab la-instagram"></i></a></li>
-            <li><a href="https://youtube.com/+AurelJaredDantis" title="YouTube"><i class="lab la-youtube"></i></a></li>
-            <li><a href="https://github.com/jareddantis" title="GitHub"><i class="lab la-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/jareddantis" title="LinkedIn"><i class="lab la-linkedin"></i></a></li>
-          </ul>
-        </div>
+    <!-- Middle -->
+    <div id="middle">
+      <div class="text">
+        <h1>Hi, <strong>I'm Jared!</strong> CS undergraduate &amp; web designer <br>from Manila, making <strong>stylish solutions</strong> <br>for everyday needs.</h1>
+        <p class="work">I created the <a href="//calc.jared.gq">GWA Calc,</a> an <a href="//send-e.ml">e-mail template link creator,</a> <br>and a <a href="//playman.jared.gq">Spotify playlist manager.</a></p>
+        <p class="call-to-action"><a href="//jared.gq/jareddantis/cv.pdf">View my CV</a> or <a href="mai&#108;to&#58;hello&#37;4&#48;ja&#114;&#101;&#37;64&#46;%67%7&#49;">get in touch.</a></p>
+      </div>
+      <div class="drawing">
+        <img data-src="img/dog.svg" alt="drawn by @oopscoffee">
+        <p>Also, I like dogs a lot.</p>
+        <p class="small">drawn by <a href="https://twitter.com/oopscoffee">@oopscoffee</a></p>
       </div>
     </div>
 
-    <!-- Right side -->
-    <div id="right">
-      <div class="right-content">
-        <table>
-          <!-- Skills -->
-          <tr class="skills">
-            <td class="icon"><i class="las la-hand-peace"></i><span class="desc">Skills</span></td>
-            <td>
-              <p><strong>Hi, I'm Jared!</strong> I'm a computer science undergraduate dabbling in Web development, graphic design, and photography.</p>
-              <p><strong>I create stylish solutions for needs that I experience every day.</strong> When I'm not doing that, I spend time in exploring new design trends and creating fun stuff for my friends and I.</p>
-              <p>These are the tools I use to do that:</p>
-              <ul>
-                <li>HTML5</li>
-                <li>jQuery</li>
-                <li>Vue.js 2 + Vuetify</li>
-                <li>CSS preprocessors (Less, Sass/SCSS, Stylus)</li>
-                <li>Adobe suite (Photoshop, Illustrator, Lightroom, Premiere Pro, InDesign)</li>
-                <li>Sketch</li>
-                <li>PHP, MySQL</li>
-                <li>Bash</li>
-              </ul>
-              <hr>
-              <p>I'd love to talk! Click or tap the <strong>Get in touch</strong> link or head to any of my socials on this page to drop me a line.</p>
-              <p>My PGP keys are <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3d500b03d1914aa7">d1914aa7 &nearr;</a> and <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x0443C45EF97A9043">f97a9043 &nearr;</a>.</p>
-            </td>
-          </tr>
-
-          <!-- Projects -->
-          <tr class="project">
-            <td class="rocket icon" rowspan="5"><i class="las la-rocket"></i><span class="desc">Projects</span></td>
-            <td>
-              <h2><a href="https://send-e.ml">send-e.ml</a></h2>
-              <p>Create links out of email templates using the mailto protocol.</p>
-              <p class="tools"><strong>Tools used</strong> Vanilla HTML5, <a href="https://shrtco.de/docs">shrtco.de API &nearr;</a></p>
-            </td>
-          </tr>
-          <tr class="project"><td>
-            <h2><a href="https://calc.jared.gq">GWA Calculator</a></h2>
-            <p>Responsive general weighted average (GWA) calculator for Philippine high school and college students. Your class standing, now only a few taps away.</p>
-            <p class="tools"><strong>Tools used</strong> Vue.js, Netlify</p>
-          </td></tr>
-          <tr class="project"><td>
-            <h2><a href="https://playman.jared.gq">Playman</a></h2>
-            <p>Easily manage your Spotify playlists, even on the go. Supports shuffling, merging, backups, and more.</p>
-              <p class="tools"><strong>Tools used</strong> Vue.js, Netlify</p>
-          </td></tr>
-          <tr class="project"><td>
-            <h2><a href="https://jared.gq/messenger-formatting/">Messenger Formatting</a></h2>
-            <p>List of text formatting options currently supported by Facebook Messenger, along with examples.</p>
-              <p class="tools"><strong>Tools used</strong> Vanilla HTML5</p>
-          </td></tr>
-        </table>
-
-        <div id="drawing">
-          <p>Did I mention that I like dogs?</p>
-          <p class="small">drawn by <a href="https://twitter.com/oopscoffee">@oopscoffee</a></p>
-          <img data-src="img/dog.svg" alt="drawn by @oopscoffee">
-        </div>
-      </div>
+    <!-- Bottom -->
+    <div id="bottom">
+      <ul>
+        <li><a href="https://twitter.com/jareddantis" title="Twitter"><i class="lab la-twitter"></i></a></li>
+        <li><a href="https://instagram.com/jareddantis" title="Instagram"><i class="lab la-instagram"></i></a></li>
+        <li><a href="https://youtube.com/+AurelJaredDantis" title="YouTube"><i class="lab la-youtube"></i></a></li>
+        <li><a href="https://github.com/jareddantis" title="GitHub"><i class="lab la-github"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jareddantis" title="LinkedIn"><i class="lab la-linkedin"></i></a></li>
+      </ul>
+      <p>PGP keys <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3d500b03d1914aa7">d1914aa7 &nearr;</a> &amp; <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x0443C45EF97A9043">f97a9043 &nearr;</a></p>
     </div>
 
     <!-- Google Analytics -->
