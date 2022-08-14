@@ -29,6 +29,7 @@
 #middle .text p a {
   display: inline-block;
   position: relative;
+  font-weight: 700;
 }
 
 #middle .text p a::after {
