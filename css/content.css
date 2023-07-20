@@ -14,16 +14,17 @@
 #middle .text h1 {
   font-size: 3rem;
   line-height: 4rem;
-  padding: 25vh 0 8vh;
+  padding: 20vh 0 8vh;
 }
 
 #middle .text p {
   font-size: 1.5rem;
   line-height: 2.25rem;
+  margin: 2rem auto;
 }
 
-#middle .text p.work {
-  margin-bottom: 4rem;
+#middle .text p.call-to-action {
+  margin-top: 4rem;
 }
 
 #middle .text p a {

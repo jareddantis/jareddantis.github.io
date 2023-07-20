@@ -40,7 +40,7 @@ screen and (max-height:800px) and (min-width:769px) {
     padding: 1rem 0 2.5rem;
   }
 
-  #middle .text p.work {
+  #middle .text p.call-to-action {
     margin-bottom: 1.5rem;
   }
 
@@ -65,7 +65,7 @@ screen and (max-height:800px) and (min-width:769px) {
 }
 
 @media screen and (max-height:800px) and (min-width:769px) {
-  #middle .text p.work {
+  #middle .text p.call-to-action {
     margin-bottom: 1rem;
   }
 }
