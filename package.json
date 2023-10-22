@@ -4,7 +4,8 @@
   "description": "My home on the Web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tailwind-dev": "tailwindcss -i ./css/main.css -o ./css/style.css --watch",
+    "tailwind-prod": "tailwindcss -i ./css/main.css -o ./css/style.css --minify"
   },
   "repository": {
     "type": "git",

@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html"],
+  darkMode: 'class',
   theme: {
     fontFamily: {
       sans: ['Inter', 'Roboto', 'sans-serif'],
@@ -9,11 +10,11 @@ module.exports = {
       colors: {
         'background': {
           DEFAULT: '#E8FFED',
-          dark: '#172221',
+          dark: '#213228',
         },
         'emphasis': {
           DEFAULT: '#17452C',
-          dark: '#2ABF66',
+          dark: '#1CD666',
         },
         'accent': {
           DEFAULT: '#20956A',
