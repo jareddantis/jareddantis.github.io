@@ -6,15 +6,12 @@
     <!-- Resource prioritization for performance -->
     <link rel="preconnect" href="https://storage.googleapis.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="preload" href="/css/style.css" as="style">
 
     <!-- Page styles -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/minireset.css/0.0.2/minireset.min.css" integrity="sha512-uBLaY+6crwV4JAHILx0HWvYncrX7TXL770hqxly0ZsQ199v4lr2yNB2jiPMoxNajFPHSQnU80B1O8dJLujWZMg==" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 
     <!-- Metadata -->
     <meta name="description" content="Manila-based CS undergraduate and web designer.">
@@ -30,60 +27,234 @@
     <meta name="twitter:image" content="https://gravatar.com/avatar/548cd4ab219a75a53f819da4e5cbf5fe?s=2048">
 
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png?v=dLmqbyOzER">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png?v=dLmqbyOzER">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png?v=dLmqbyOzER">
-    <link rel="manifest" href="favicons/manifest.json?v=dLmqbyOzER">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg?v=dLmqbyOzER" color="#5bbad5">
-    <link rel="shortcut icon" href="favicons/favicon.ico?v=dLmqbyOzER">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#20956a">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Jared Dantis">
     <meta name="application-name" content="Jared Dantis">
-    <meta name="msapplication-config" content="favicons/browserconfig.xml?v=dLmqbyOzER">
+    <meta name="msapplication-TileColor" content="#20956a">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Dark mode preference -->
+    <script>
+      const followSystem = !('theme' in localStorage);
+
+      if (localStorage.theme === 'dark' || (followSystem && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark')
+      } else {
+        document.documentElement.classList.remove('dark')
+      }
+    </script>
   </head>
   <body>
-    <!-- Top -->
-    <div id="top">
-      <img src="img/name.svg" alt="Jared Dantis">
-    </div>
+    <!-- Header -->
+    <header id="top" class="w-screen h-screen flex flex-col md:flex-row">
+      <div class="basis-3/5 lazy bg-cover bg-center blur-sm transition-all"
+        data-bg="/img/me.jpg"
+      >
+        &nbsp;
+      </div>
+      <div class="basis-2/5 bg-accent dark:bg-accent-dark
+        flex flex-col justify-between items-start
+        px-8 py-8 md:px-16 md:py-24"
+      >
+        <!-- Logo -->
+        <img src="/img/name.svg" alt="Jared Dantis" class="h-8 invert">
 
-    <!-- Middle -->
-    <div id="middle">
-      <div class="text">
-        <h1>
-          I'm <strong>Jared,</strong> a CS undergrad &amp; web dev <br>
-          from the Philippines infusing <br><strong>timely tools* with style.</strong>
+        <!-- Greeting -->
+        <h1 class="text-text-dark">
+          Kumusta?<br>
+          I'm Jared.
         </h1>
-        <p>
-          * including two Discord bots<br>
-          (for <a href="//rico.dantis.me">recommending stuff</a>
-          and for <a href="//blanco.dantis.me">listening to music</a>),<br>
-          a <a href="//calc.dantis.me">GWA calculator,</a> a <a href="//playman.dantis.me">Spotify playlist manager,</a><br>
-          and an <a href="//send-e.ml">e-mail template link creator.</a></p>
-        <p>
-          I also keep a <a href="//thoughts.dantis.me">blog</a> for those times<br>
-          when Tweets just aren't long enough.
-        </p>
-        <p class="call-to-action"><a href="//dantis.me/jareddantis/cv.pdf">View my CV</a> or drop me a line at <a href='mai&#108;&#116;o&#58;ja&#114;&#101;d&#64;d%61ntis&#46;&#37;&#54;De'>ja&#114;&#101;d&#64;dantis&#46;m&#101;</a>.</p>
-      </div>
-      <div class="drawing">
-        <img data-src="img/dog.svg" alt="drawn by @oopscoffee">
-        <p>Also I like dogs a lot!</p>
-        <p class="small">drawn by <a href="https://twitter.com/oopscoffee">@oopscoffee</a></p>
-      </div>
-    </div>
 
-    <!-- Bottom -->
-    <div id="bottom">
-      <ul>
-        <li><a href="https://twitter.com/jareddantis" title="Twitter"><i class="lab la-twitter"></i></a></li>
-        <li><a href="https://instagram.com/jareddantis" title="Instagram"><i class="lab la-instagram"></i></a></li>
-        <li><a href="https://youtube.com/+AurelJaredDantis" title="YouTube"><i class="lab la-youtube"></i></a></li>
-        <li><a href="https://github.com/jareddantis" title="GitHub"><i class="lab la-github"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/jareddantis" title="LinkedIn"><i class="lab la-linkedin"></i></a></li>
-      </ul>
-      <p>PGP keys <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3d500b03d1914aa7">d1914aa7 &nearr;</a></p>
-    </div>
+        <!-- Socials -->
+        <ul class="list-none">
+          <li><a href="https://instagram.com/jareddantis"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://github.com/jareddantis"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/jareddantis"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Intro -->
+    <section id="intro" class="md:pt-16 md:pb-8">
+      <div>
+        <img class="lazy w-16 md:w-24" src="/img/memoji.png" alt="Memoji">
+      </div>
+      <div class="col-span-2">
+        <h2 class="mb-6">
+          I'm a Filipino he/him<br>
+          infusing timely tools with style.
+        </h2>
+        <p class="mb-4">
+          I'm finishing my B.Sc. in Computer Science at
+          <a href="https://dcs.upd.edu.ph">UP Diliman</a>.<br>
+          Sometimes I take
+          <a href="https://instagram.com/jareddantis">pictures</a>,
+          listen to
+          <a href="https://open.spotify.com/user/aureljared">music</a>,
+          and write
+          <a href="https://thoughts.dantis.me">blog posts</a>.
+        </p>
+        <p>
+          <em>"Kumusta?"</em>
+          means
+          <em>"How are you?"</em>
+          in Filipino. Kumusta ka? 😊
+        </p>
+      </div>
+    </section>
+
+    <section class="actions pt-0">
+      <div class="hidden md:block">&nbsp;</div>
+      <div>
+        <a href="https://dantis.me/jareddantis/cv.pdf"
+          class="button"
+        >
+          <span>Download my CV</span>
+          <span>-&gt;</span>
+        </a>
+      </div>
+      <div>
+        <a href="mailto:jared@d%61ntis.%6De"
+          class="button"
+        >
+          <span>Send me an email</span>
+          <span>-&gt;</span>
+        </a>
+
+        <p class="text-sm text-right mt-4">
+          PGP key
+          <a href="https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3d500b03d1914aa7">3d500b03d1914aa7</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Dashed line divider -->
+    <section id="divider" class="py-2 md:py-4">
+      <div class="md:col-span-3 w-full h-px border-t
+        border-dashed border-accent dark:border-accent-dark"
+      ></div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="md:col-span-3">Skills</h2>
+      
+      <div>
+        <h3>Languages</h3>
+        <ul class="list-none">
+          <li><span>Python</span><i class="fa-brands fa-python"></i></li>
+          <li><span>HTML5</span><i class="fa-brands fa-html5"></i></li>
+          <li><span>CSS3</span><i class="fa-brands fa-css3"></i></li>
+          <li><span>JavaScript</span><i class="fa-brands fa-js"></i></li>
+          <li><span>SQL</span></li>
+          <li><span>Bash</span></li>
+          <li><span>C</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Libraries &amp; frameworks</h3>
+        <ul class="list-none">
+          <li><span>Nextcord / discord.py</span><i class="fa-brands fa-python"></i></li>
+          <li><span>Flask</span><i class="fa-brands fa-python"></i></li>
+          <li><span>Vue 3</span><i class="fa-brands fa-vuejs"></i></li>
+          <li><span>Nuxt 3</span><i class="fa-brands fa-vuejs"></i></li>
+          <li><span>Tailwind CSS</span><i class="fa-brands fa-css3"></i></li>
+          <li><span>Bootstrap</span><i class="fa-brands fa-bootstrap"></i></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Technologies</h3>
+        <ul class="list-none">
+          <li><span>Docker</span><i class="fa-brands fa-docker"></i></li>
+          <li><span>Git</span><i class="fa-brands fa-git-alt"></i></li>
+          <li><span>Cloudflare</span><i class="fa-brands fa-cloudflare"></i></li>
+          <li><span>nginx</span></li>
+          <li><span>PostgreSQL</span></li>
+          <li><span>MySQL</span></li>
+          <li><span>Redis</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured projects -->
+    <section id="projects">
+      <h2 class="md:col-span-3">Projects</h2>
+
+      <a href="https://blanco.dantis.me" class="card">
+        <img src="/img/project-1.svg" alt="Blanco"
+          class="lazy w-full rounded-lg">
+        <h3 class="mt-4">Blanco</h3>
+        <p>
+          Discord music bot designed to work with Lavalink 4.
+          Supports Spotify playlists and scrobbling to Last.fm.
+        </p>
+      </a>
+      <a href="https://playman.dantis.me" class="card">
+        <img src="/img/project-2.svg" alt="Playman"
+          class="lazy w-full rounded-lg">
+        <h3 class="mt-4">Playman</h3>
+        <p>
+          Toolbox for managing your Spotify playlists.
+          Supports shuffling, backups, and more.
+        </p>
+      </a>
+      <a href="https://calc.dantis.me" class="card">
+        <img src="/img/project-3.svg" alt="GWA Calc"
+          class="lazy w-full rounded-lg">
+        <h3 class="mt-4">GWA Calculator</h3>
+        <p>
+          Weighted average calculator for Philippine
+          secondary and tertiary education.
+        </p>
+      </a>
+    </section>
+
+    <!-- Recent posts -->
+    <section id="posts">
+      <h2 class="md:col-span-3">Posts</h2>
+
+      <div id="placeholder">
+        <p>Loading posts...</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emphasis mt-4">
+      <div class="content">
+        <div>
+          <!-- Logo -->
+          <img src="/img/name.svg" alt="Jared Dantis"
+            class="h-10 invert">
+        </div>
+    
+        <!-- Message -->
+        <p>
+          Nice to meet you :&#41;<br>
+          Made with <i class="fa-solid fa-heart"></i> from the 🇵🇭
+        </p>
+  
+        <!-- Dark mode select -->
+        <p>
+          <a href="#top">Back to top</a><br>
+
+          Theme:&nbsp;
+          <select name="Dark mode" id="theme-selector" class="text-text">
+            <option value="auto" selected>Follow system</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </p>
+      </div>
+    </footer>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/c8e66fe49c.js" crossorigin="anonymous"></script>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105023016-2"></script>
@@ -93,19 +264,13 @@
       gtag('js', new Date());
       gtag('config', 'UA-105023016-2');
     </script>
-    <script type="text/javascript">
-      // Open all images in new tab
-      [].forEach.call(document.querySelectorAll('a'), function(link) {
-        link.setAttribute('target', '_blank');
-        link.setAttribute('rel', 'noopener');
-      });
-      // Lazy load images
-      [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
-        img.setAttribute('src', img.getAttribute('data-src'));
-        img.onload = function() {
-          img.removeAttribute('data-src');
-        };
-      });
-    </script>
+
+    <!-- Lazy load higher res images -->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.min.js"
+      integrity="sha256-5Aq/PyOyPLAd5/6rMXc/Lb+UB0yw+w/uyN4YKxxp77M=" crossorigin="anonymous"></script>
+    <script>var lazyLoadInstance = new LazyLoad();</script>
+
+    <!-- Onload -->
+    <script src="/js/script.js"></script>
   </body>
 </html>

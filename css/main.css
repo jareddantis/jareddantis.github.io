@@ -1,0 +1,67 @@
+@tailwind base;
+@layer base {
+    h1, h2, h3 {
+        font-feature-settings: 'cv11' on, 'ss03' on, 'ss02' on;
+    }
+    h2, h3 {
+        @apply text-emphasis dark:text-emphasis-dark;
+    }
+    p, a {
+        font-feature-settings: 'ss02' on;
+    }
+    h1 {
+        @apply font-bold text-3xl md:text-5xl;
+    }
+    h2 {
+        @apply text-xl leading-snug md:text-2xl;
+    }
+    h3 {
+        @apply font-bold text-base md:text-lg mb-3;
+    }
+    a {
+        @apply underline;
+    }
+    p, li {
+        @apply text-sm md:text-base text-text dark:text-text-dark;
+    }
+    body {
+        @apply bg-background dark:bg-background-dark;
+    }
+    section, footer > .content {
+        /* Three cols on desktop */
+        @apply w-full mx-auto p-8 grid grid-rows-1 grid-cols-1 gap-y-8
+            md:py-10 md:max-w-5xl md:grid-cols-3 md:gap-x-12;
+    }
+    footer > .content {
+        @apply gap-y-4
+    }
+
+    /* Specific text styles */
+    header ul li {
+        @apply inline-block mr-4 text-text-dark text-lg;
+    }
+    #skills li {
+        @apply flex flex-row justify-between items-center;
+    }
+    footer p {
+        @apply text-xs mb-2 text-text-dark leading-relaxed md:text-sm md:leading-loose;
+    }
+
+    /* Custom links */
+    a.card {
+        @apply no-underline;
+    }
+    a.card:hover h3 {
+        @apply underline;
+    }
+    a.button {
+        @apply w-full no-underline flex flex-row justify-between items-center
+            p-4 border-2 font-bold transition-colors
+            border-emphasis text-emphasis
+            hover:bg-emphasis hover:text-text-dark
+            dark:border-emphasis-dark dark:text-emphasis-dark
+            dark:hover:bg-emphasis-dark dark:hover:text-text;
+    }
+}
+@tailwind components;
+@tailwind utilities;
