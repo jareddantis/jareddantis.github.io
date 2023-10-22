@@ -1,0 +1,25 @@
+{
+  "name": "jareddantis.github.io",
+  "version": "2023.10.22",
+  "description": "My home on the Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jareddantis/jareddantis.github.io.git"
+  },
+  "keywords": [
+    "homepage"
+  ],
+  "author": "Jared Dantis",
+  "bugs": {
+    "url": "https://github.com/jareddantis/jareddantis.github.io/issues"
+  },
+  "homepage": "https://github.com/jareddantis/jareddantis.github.io#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "tailwindcss": "^3.3.3"
+  }
+}
