@@ -37,7 +37,7 @@
     }
 
     /* Specific text styles */
-    header ul li {
+    header ul li, #webring-info ul li {
         @apply inline-block mr-4 text-text-dark text-lg;
     }
     #skills li {
@@ -45,6 +45,12 @@
     }
     footer p {
         @apply text-xs mb-2 text-text-dark leading-relaxed md:text-sm md:leading-loose;
+    }
+    #webring-info h1, #webring-info h2, #webring-info h3, #webring-info ul li {
+        @apply text-text-dark;
+    }
+    #webring-info ul li {
+        @apply text-xs font-bold;
     }
 
     /* Custom links */
