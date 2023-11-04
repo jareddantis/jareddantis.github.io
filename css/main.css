@@ -52,6 +52,9 @@
     #webring-info ul li {
         @apply text-xs font-bold;
     }
+    .actions {
+        @apply gap-y-4;
+    }
 
     /* Custom links */
     a.card {
@@ -62,8 +65,8 @@
     }
     a.button {
         @apply w-full no-underline flex flex-row justify-between items-center
-            p-4 border-2 font-bold transition-colors
-            border-emphasis text-emphasis
+            p-4 border-2 font-bold transition-all active:rounded-[3rem]
+            active:px-6 border-emphasis text-emphasis
             hover:bg-emphasis hover:text-text-dark
             dark:border-emphasis-dark dark:text-emphasis-dark
             dark:hover:bg-emphasis-dark dark:hover:text-text;
